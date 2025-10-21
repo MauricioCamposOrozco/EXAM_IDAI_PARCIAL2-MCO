@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Telefonico</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #24b360;
+        }
+        #Contenedor {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recibo Telefonico</h1>
+    <div id="Contenedor">
+        Recibo Telefonico
+    </div>
+
+    <form action="">
+
+    <div>
+    <label for="calculoMinutos">
+    Minutos de llamadas a celular: (1.00 c/u)</label>
+    <input type="number" id="calculoMinutos" name="calculoMinutos" min="0" step="1" value="0">
+    </div>
+<hr>
+    <div>
+        <label for="Tipos de plan">
+            Tipos plan
+        </label>
+
+        <br>
+
+        <label for="Tipo de plan">
+            Solo telefono (200.00)
+        </label>
+
+        <input type="radio" id="Solo telefono" name="tipoPlan" value="plan1">
+
+        <br>
+
+        <label for="">
+            Telefono + Interntet (450.00)
+        </label>
+        <input type="radio" id="plan2" name="tipoPlan" value="plan2">
+
+        <br>
+
+        <label for="Tipo de plan">
+            Telefono + Internet + TV (850.00)
+        </label>
+        <input type="radio" id="plan3" name="tipoPlan" value="plan3">
+
+<hr>
+
+    <div>
+        <label for="Otros Servicios">
+            Otros Servicios
+        </label>
+
+        <br>
+
+        <label for="">
+            Antivirus (30.00)
+        </label>
+        <input type="checkbox" name="Antivirus" id="Antivirus">
+
+        <br>
+
+        <label for="">
+            Servicios de la nube (50.00)
+        </label>
+        <input type="checkbox" name="Soporte Tecnico" id="Soporte Tecnico">
+        <br>
+        <label for="">
+            Servicios Web (40.00)
+        </label>
+        <input type="checkbox" name="Servicios Web" id="Servicios Web">
+    </div>
+    <hr>
+    <div>
+        <label for="Paquetes">
+            Paquetes
+        </label>
+        <select name="Paquetes" id="Paquetes">
+            <option value="Paquetes">Residencial</option>
+            <option value="Paquetes">PYMES</option>
+            <option value="Paquetes">Empresas</option>
+
+        </select>
+        <hr>
+    <button type="submit">Calcular Total a Pagar</button>
+
+    </form>
+    
+</body>
+</html>
